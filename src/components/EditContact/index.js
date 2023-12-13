@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 const EditContact = ({ contacts, updateContact }) => {
   const { id } = useParams();
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const currentContact = contacts.find(
     (contact) => contact.id === parseInt(id)
   );
